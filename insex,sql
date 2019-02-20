@@ -1,0 +1,13 @@
+create database company;
+create table guvi
+(
+ id int NOT NULL AUTO_INCREMENT,
+    name  VARCHAR(15) NOT NULL,
+    age     int,
+    PRIMARY KEY (id)
+);
+CREATE INDEX idx_name ON guvi (name);
+INSERT INTO guvi(name,age) VALUES('irfan',20);
+INSERT INTO guvi(name,age) VALUES('salim',20);
+select* from guvi;
+desc guvi;
